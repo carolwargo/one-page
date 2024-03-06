@@ -1,8 +1,10 @@
 import React from 'react';
 import FenceBackground from '../../assets/images/FenceBackground.png';
+import Header from '../../components/Header/Header';
 const Home = () => {
     return (
         <main style={{backgroundImage:{FenceBackground}}}>
+            <Header />
         <h1>Home</h1>
 <div className='row'>
     <div className='col' id='#what'>What we do</div>

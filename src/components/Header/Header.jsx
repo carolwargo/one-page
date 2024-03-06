@@ -77,6 +77,13 @@ const Header = () => {
             <Nav.Link href="/contact" className="nav-link-contact">
               Contact
             </Nav.Link>
+
+            <Nav.Link href="/site" className="nav-link-site">
+              Site
+            </Nav.Link>
+            <Nav.Link href="/daly-blog" className="nav-link-site">
+            DB
+            </Nav.Link>
           </Nav>
           </Navbar.Collapse>
       </Navbar>
