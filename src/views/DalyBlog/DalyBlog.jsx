@@ -114,7 +114,16 @@ const DalyBlog = () => {
             </h6>
             <br />
             <br />
-            <h3 className="text-primary text-center"><b>NOTE:DALY PIC FOR BACKGROUND</b></h3>
+            <div className="text-primary p-lg-5">
+            <h3><u><b>DALY</b>- READ ME!!!!</u></h3>
+            <p><b>NOTES:</b> This is a start. We have pics, videos, content, etc. to add. Just want you to see the basic structure! </p>
+            <p><b>1. You picture will be the background pic for this section</b></p>
+            <p><b>2. This is a page on my "one page" recruit site I am building:</b></p>
+            <ul>
+                <li> If there are any styling issues, it is probably due to content you cannot see. So no worries.</li>
+                <li> Function; for example the like & subscribe buttons and download links will be integrated at the end if needed. So don't worry if they don't seem to work right now.</li>
+            </ul>
+            </div>
           </div>
         </header>
         {/* end image header */}
