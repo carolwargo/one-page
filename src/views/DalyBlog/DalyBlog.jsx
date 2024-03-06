@@ -112,6 +112,9 @@ const DalyBlog = () => {
                 Subscribe
               </button>
             </h6>
+            <br />
+            <br />
+            <h3 className="text-primary text-center"><b>NOTE:DALY PIC FOR BACKGROUND</b></h3>
           </div>
         </header>
         {/* end image header */}
