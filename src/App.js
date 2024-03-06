@@ -10,7 +10,7 @@ import DalyBlog from './views/DalyBlog/DalyBlog';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter >
+   <BrowserRouter basename="/one-page" >
       
       <Routes>
         <Route path="/" element={<DalyBlog />} />
