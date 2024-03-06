@@ -7,9 +7,34 @@ import Clay2 from "../../assets/images/Clay2.png";
 const DalyBlog = () => {
   return (
     <div className="w3-light-grey">
+      <div className="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="#backend" className="w3-bar-item w3-button">
+          <b>DW</b> RECRUIT
+        </a>
+
+        <div className="w3-right">
+          <a href="#projects" className="w3-bar-item w3-button">
+            BIO
+          </a>
+          <a href="#about" className="w3-bar-item w3-button">
+            ATHLETICS
+          </a>
+          <a href="#about" className="w3-bar-item w3-button">
+            ACADEMICS
+          </a>
+          <a href="#about" className="w3-bar-item w3-button">
+            FILM
+          </a>
+          <a href="#contact" className="w3-bar-item w3-button">
+            CONTACT
+          </a>
+        </div>
+      </div>
+      <hr />
+
       {/*NOTES: 1. I certify I am in compliance... 2. Core Classes calculated... 3. Student pledge... 4. Metrics */}
       {/* nav start */}
-      <div className="w3-bar w3-black ">
+      {/**  <div className="w3-bar w3-black ">
         <a href="/" className="w3-bar-item w3-button">
           <i className="fab fa-facebook-official"></i>
         </a>
@@ -23,6 +48,7 @@ const DalyBlog = () => {
           <i className="fas fa-phone"></i>
         </a>
       </div>
+        */}
       {/* nav end*/}
       {/* start whole page content container */}
       <div className="w3-content" style={{ maxWidth: "1600px" }}>
@@ -31,10 +57,39 @@ const DalyBlog = () => {
           <h1 className="w3-xxxlarge">
             <b>DALY WARGO</b>
           </h1>
-          <h5>
-            VOLLEYBALL RECRUIT <span className="w3-tag">CLASS of 2026 </span>
+          <h5 className="w3-tag bg-secondary-subtle text-secondary p-2 border border-top">
+            VOLLEYBALL RECRUIT <b>|</b> CLASS of 2026 <b>|</b> Maryland <b>|</b>{" "}
+            6'0" <b>|</b> Setter
           </h5>
+          {/** <hr className='justify-content-center my-2' style={{width:'50%', margin:'0 auto'}} />*/}
+          <div>
+            <a href="/" className="w3-button">
+              <i
+                className="fab fa-facebook-official text-black"
+                style={{ fontSize: "1.5rem" }}
+              ></i>
+            </a>
+            <a href="/" className="w3-button">
+              <i
+                className="fab fa-instagram text-black"
+                style={{ fontSize: "1.5rem" }}
+              ></i>
+            </a>
+            <a href="/" className="w3-button">
+              <i
+                className="fas fa-envelope text-black"
+                style={{ fontSize: "1.5rem" }}
+              ></i>
+            </a>
+            <a href="/" className="w3-button">
+              <i
+                className="fas fa-phone text-black"
+                style={{ fontSize: "1.5rem" }}
+              ></i>
+            </a>
+          </div>
         </header>
+        <hr />
         {/* end header */}
 
         {/* start image header */}
@@ -245,9 +300,6 @@ const DalyBlog = () => {
           {/* end entry col*/}
           <div className="w3-col l4">
             <div className="w3-white w3-margin">
-              <div className="w3-container w3-padding w3-black">
-                <h4>ATHLETE BIO</h4>
-              </div>
               <img
                 src={Clay2}
                 alt="clay"
@@ -270,7 +322,39 @@ const DalyBlog = () => {
 
             <div className="w3-white w3-margin">
               <div className="w3-container w3-padding w3-black">
-                <h4>Athlete Profile</h4>
+                <h4>Student Profile</h4>
+              </div>
+              <div className="w3-container w3-white">
+                <div
+                  className="w3-container w3-display-container w3-light-grey w3-section"
+                  style={{ height: "200px" }}
+                >
+                  <span className="w3-display-middle">description here</span>
+                </div>
+              </div>
+            </div>
+            <hr />
+
+            {/* start advertising */}
+            <div className="w3-white w3-margin">
+              <div className="w3-container w3-padding w3-black">
+                <h4>Athletic Profile</h4>
+              </div>
+              <div className="w3-container w3-white">
+                <div
+                  className="w3-container w3-display-container w3-light-grey w3-section"
+                  style={{ height: "200px" }}
+                >
+                  <span className="w3-display-middle">description here</span>
+                </div>
+              </div>
+            </div>
+            <hr />
+            {/* end advertising */}
+
+            <div className="w3-white w3-margin">
+              <div className="w3-container w3-padding w3-black">
+                <h4>References</h4>
               </div>
               <ul className="w3-ul w3-hoverable w3-white">
                 <li className="w3-padding-16">
@@ -321,22 +405,48 @@ const DalyBlog = () => {
             </div>
             <hr />
             {/* end posts */}
-            {/* start advertising */}
+            {/* start testimonials | references*/}
             <div className="w3-white w3-margin">
-              <div className="w3-container w3-padding w3-black">
-                <h4>Student Profile</h4>
+              <div className="w3-container w3-margin-bottom w3-padding w3-black">
+                <h4>Downloads Dashboard</h4>
               </div>
-              <div className="w3-container w3-white">
-                <div
-                  className="w3-container w3-display-container w3-light-grey w3-section"
-                  style={{ height: "200px" }}
-                >
-                  <span className="w3-display-middle">description here</span>
+              <div className="w3-row-padding w3-white">
+                <div className="w3-col s6">
+                  <img src={Clay2} alt="clay" style={{ width: "100%" }} />
+                  <p className="text-center">
+                    <a href="/" alt="schedule">
+                      School Schedule
+                    </a>
+                  </p>
+
+                  <img src={Clay2} alt="clay" style={{ width: "100%" }} />
+                  <p className="text-center">
+                    {" "}
+                    <a href="/" alt="schedule">
+                      Contact Share
+                    </a>
+                  </p>
+                </div>
+                <div className="w3-col s6">
+                  <img src={Clay2} alt="clay" style={{ width: "100%" }} />
+                  <p className="text-center">
+                    <a href="/" alt="schedule">
+                      Club Schedule
+                    </a>
+                  </p>
+
+                  <img src={Clay2} alt="clay" style={{ width: "100%" }} />
+                  <p className="text-center">
+                    {" "}
+                    <a href="/" alt="schedule">
+                      Stats Sheet
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
             <hr />
-            {/* end advertising */}
+
             {/* start tags*/}
             <div className="w3-white w3-margin">
               <div className="w3-container w3-margin-bottom w3-padding w3-black">
@@ -391,36 +501,6 @@ const DalyBlog = () => {
             </div>
             <hr />
             {/* end tags*/}
-            {/* start inspiration*/}
-            <div className="w3-white w3-margin">
-              <div className="w3-container w3-margin-bottom w3-padding w3-black">
-                <h4>Inspiration</h4>
-              </div>
-              <div className="w3-row-padding w3-white">
-                <div className="w3-col s6">
-                  <p>
-                    <img src={Clay2} alt="clay" style={{ width: "100%" }} />
-                  </p>
-                  <p>
-                    <img src={Clay2} alt="clay" style={{ width: "100%" }} />
-                  </p>
-                </div>
-                <div className="w3-col s6">
-                  <p>
-                    <img
-                      src={Clay2}
-                      alt="clay"
-                      style={{ width: "100%" }}
-                      className="w3-grayscale"
-                    />
-                  </p>
-                  <p>
-                    <img src={Clay2} alt="clay" style={{ width: "100%" }} />
-                  </p>
-                </div>
-              </div>
-            </div>
-            <hr />
 
             <div className="w3-white w3-margin">
               <div className="w3-container w3-margin-bottom w3-padding w3-black">
@@ -494,6 +574,9 @@ const DalyBlog = () => {
 
       {/* start footer*/}
       <footer className="w3-container w3-dark-grey" style={{ padding: "32px" }}>
+        <h4 className="text-center">
+          I WILL FINISH FOOTER AT THE END WHEN LAYOUT IS COMPLETE
+        </h4>
         <a
           href="/"
           className="w3-button w3-black w3-padding-large w3-margin-bottom"
